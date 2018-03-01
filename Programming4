@@ -1,1 +1,20 @@
+Class dalam permainan ular tangga:
+•	Class Papan permainan
+•	Class Pemain
+•	Class Dadu
 
+Agregasi
+Agregasi adalah bentuk hubungan yang lebih khusus dari Assosiasi dimana sebuah object memiliki lifecycle nya sendiri tapi dengan kepemilikan dan class child tidak dapat memiliki class parentnya, alias sendiri - sendiri.
+
+Misalnya pada Class Papan permainan ular tangga pemain yang terkena mulut ular (Class Trap) akan turun atau mengikuti panjang ular hingga sampi ujung atau ekor ular, dan kalaupun salah satu Class Pemain hancur, Class Papan masih ada atau Class pemain lain masih ada.
+
+Komposisi
+Komposisi sama dengan relasi Agregasi, tapi lebih spesfic lagi yaitu lifecycle object bergantung pada object ownernya. Kelas yang lebih kompleks tersusun atas kelas-kelas lainnya yang lebih sederhana. Merupakan hubungan yang lebih kuat dari hubungan agregasi.
+
+Misal pada permainan ini, Class Pemain memiliki letak koordinat pada Class Papan permainan, dan Class Dadu sebagai penentu berapa langkah Class Pemain akan bergerak apabila salah satu Class tidak ada, maka Class pemain tidak dapat berjalan. Begitupun juga sebaliknya.
+
+
+Inheritance
+Merupakan kelas baru yang diciptakan dari sebuah kelas (kelas induk), dimana kelas baru tersebut akan mewarisi semua atribut dan method yang dimiliki oleh kelas induk. Kelas baru (kelas turunan) bisa memiliki atribut dan method tambahan yang lain sehingga kelas turunan akan menjadi lebih luas (atau lebih spesifik) daripada kelas induk.
+
+Pada permainan ular tangga penerapan Inheritance ada class grafis, dimana grafis itu akan di pakai semua class lainnya untuk memberi texture pada ular tangga.
